@@ -1,0 +1,128 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { supabase } from "../supabaseClient";
+import "./AdminAuth.css";
+
+function AdminSignup() {
+
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
+
+  const handleSignup = async (e) => {
+
+    e.preventDefault();
+
+    setLoading(true);
+
+
+    const {  error } =
+      await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+
+    if (error) {
+
+      alert(error.message);
+
+      setLoading(false);
+
+      return;
+    }
+
+
+    alert(
+      "Account created. Admin authorization is required before you can manage jobs."
+    );
+
+
+    navigate("/admin-login");
+
+    setLoading(false);
+
+  };
+
+
+  return (
+
+    <div className="admin-auth-page">
+
+      <div className="admin-auth-card">
+
+        <h1>
+          Admin Sign Up
+        </h1>
+
+        <p>
+          Create an administrator account.
+        </p>
+
+
+        <form onSubmit={handleSignup}>
+
+          <label>
+            Email
+          </label>
+
+          <input
+            type="email"
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) =>
+              setEmail(e.target.value)
+            }
+            required
+          />
+
+
+          <label>
+            Password
+          </label>
+
+          <input
+            type="password"
+            placeholder="Create password"
+            value={password}
+            onChange={(e) =>
+              setPassword(e.target.value)
+            }
+            minLength="6"
+            required
+          />
+
+
+          <button
+            type="submit"
+            disabled={loading}
+          >
+            {loading
+              ? "Creating..."
+              : "Create Account"}
+          </button>
+
+        </form>
+
+
+        <button
+          className="secondary-button"
+          onClick={() =>
+            navigate("/admin-login")
+          }
+        >
+          Already have an account?
+        </button>
+
+      </div>
+
+    </div>
+
+  );
+}
+
+export default AdminSignup;

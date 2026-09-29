@@ -1,0 +1,589 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  text-align: center;
+  padding: 45px 20px;
+  margin-bottom: 30px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  margin: 0 0 12px;
+
+  color: #1e3a8a;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-hero p {
+  max-width: 750px;
+  margin: 0 auto;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+
+  margin-bottom: 40px;
+}
+
+.about-card {
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.about-card h2 {
+  margin: 0 0 15px;
+
+  color: #1e3a8a;
+
+  font-size: 22px;
+}
+
+.about-card p {
+  margin: 0 0 12px;
+
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.services-section,
+.features-section,
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.services-section > h2,
+.features-section > h2,
+.contact-section > h2 {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  color: #1e3a8a;
+
+  font-size: 26px;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.service-card {
+  padding: 25px 20px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  font-size: 34px;
+
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+
+  color: #1e3a8a;
+
+  font-size: 18px;
+}
+
+.service-card p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features-section {
+  padding: 30px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+.features-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 12px 30px;
+}
+
+.feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 7px;
+}
+
+.feature span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  flex-shrink: 0;
+
+  background: #16a34a;
+
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.feature p {
+  margin: 0;
+
+  color: #444;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TEAM / ABOUT US
+========================================= */
+
+.contact-section {
+  text-align: center;
+
+  padding: 35px 20px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+.team-subtitle {
+  margin: -10px 0 25px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+.team-info {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.team-member {
+  width: 230px;
+
+  padding: 20px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+.team-photo {
+  display: block;
+
+  width: 110px;
+  height: 110px;
+
+  margin: 0 auto 15px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #e5e7eb;
+}
+
+.team-member h3 {
+  margin: 0 0 7px;
+
+  color: #1e3a8a;
+
+  font-size: 17px;
+}
+
+.team-member p {
+  margin: 0;
+
+  color: #333;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.disclaimer-section {
+  margin-top: 40px;
+}
+
+.disclaimer-card {
+  padding: 22px 25px;
+
+  background: #fffdf5;
+
+  border: 1px solid #f0dfaa;
+
+  border-left: 4px solid #e0a800;
+
+  border-radius: 8px;
+}
+
+.disclaimer-card h2 {
+  margin: 0 0 12px;
+
+  color: #856404;
+
+  font-size: 20px;
+}
+
+.disclaimer-card p {
+  margin: 0 0 10px;
+
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.disclaimer-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .about-page {
+    padding: 20px 15px 40px;
+  }
+
+  .about-hero {
+    padding: 35px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 26px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-info {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 23px;
+  }
+
+  .services-section > h2,
+  .features-section > h2,
+  .contact-section > h2 {
+    font-size: 22px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .features-section {
+    padding: 20px 15px;
+  }
+
+} /* =========================================
+   ADMIN LOGIN
+========================================= */
+
+.admin-login-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.admin-login-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px 30px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-left: 5px solid #1e3a8a;
+
+  border-radius: 10px;
+}
+
+.admin-login-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  background: #e0e7ff;
+
+  border-radius: 50%;
+
+  font-size: 27px;
+}
+
+.admin-login-content {
+  flex: 1;
+}
+
+.admin-login-content h2 {
+  margin: 0 0 7px;
+
+  color: #1e3a8a;
+
+  font-size: 21px;
+}
+
+.admin-login-content p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   ADMIN LOGIN BUTTON
+========================================= */
+
+.about-admin-login-button {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background: #1e3a8a;
+
+  color: white;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: background 0.2s ease;
+}
+
+.about-admin-login-button:hover {
+  background: #172554;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .admin-login-card {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px 20px;
+  }
+
+  .admin-login-content h2 {
+    font-size: 20px;
+  }
+
+  .admin-login-content p {
+    font-size: 13px;
+  }
+
+  .about-admin-login-button {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+}

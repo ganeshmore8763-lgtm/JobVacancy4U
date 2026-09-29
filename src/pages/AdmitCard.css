@@ -1,0 +1,361 @@
+/* =========================================
+   ADMIT CARD PAGE
+========================================= */
+
+.admit-card-page {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px 20px 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.admit-card-header {
+  text-align: center;
+
+  padding: 40px 20px;
+
+  margin-bottom: 30px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+}
+
+.admit-card-header h1 {
+  margin: 0 0 10px;
+
+  color: #1e3a8a;
+
+  font-size: 32px;
+}
+
+.admit-card-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.admit-card-section {
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.admit-card-section .section-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+
+  padding: 15px 20px;
+
+  background: #f8fafc;
+
+  border-left: 5px solid #2563eb;
+
+  border-radius: 8px;
+}
+
+.admit-card-section .section-title h2 {
+  margin: 0;
+
+  color: #1e3a8a;
+
+  font-size: 23px;
+}
+
+.admit-card-section .section-title span {
+  padding: 6px 12px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.admit-table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admit-card-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+
+  background: white;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.admit-card-table thead {
+  background: #1e3a8a;
+}
+
+.admit-card-table th {
+  padding: 14px 12px;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.admit-card-table td {
+  padding: 14px 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #444;
+
+  font-size: 14px;
+
+  vertical-align: middle;
+}
+
+.admit-card-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.admit-card-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   ORGANIZATION
+========================================= */
+
+.admit-card-table td strong {
+  color: #1e3a8a;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   AVAILABLE
+========================================= */
+
+.available {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #dcfce7;
+
+  color: #166534;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   COMING SOON
+========================================= */
+
+.coming-soon {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   VISIT BUTTON
+========================================= */
+
+.admit-button {
+  display: inline-block;
+
+  padding: 8px 13px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: background 0.2s ease;
+}
+
+.admit-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   NOTICE
+========================================= */
+
+.admit-notice {
+  padding: 20px 25px;
+
+  background: #fffdf5;
+
+  border: 1px solid #f0dfaa;
+
+  border-left: 4px solid #e0a800;
+
+  border-radius: 8px;
+}
+
+.admit-notice h2 {
+  margin: 0 0 10px;
+
+  color: #856404;
+
+  font-size: 20px;
+}
+
+.admit-notice p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .admit-card-page {
+    padding: 20px 15px 40px;
+  }
+
+  .admit-card-header {
+    padding: 30px 15px;
+  }
+
+  .admit-card-header h1 {
+    font-size: 26px;
+  }
+
+  .admit-card-header p {
+    font-size: 14px;
+  }
+
+  .admit-card-section .section-title {
+    padding: 12px 15px;
+  }
+
+  .admit-card-section .section-title h2 {
+    font-size: 20px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+  .admit-card-section .section-title {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+  .admit-card-section .section-title h2 {
+    font-size: 19px;
+  }
+
+  .admit-notice {
+    padding: 18px;
+  }
+
+}

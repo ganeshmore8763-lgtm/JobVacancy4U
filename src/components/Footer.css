@@ -1,0 +1,195 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  
+
+  background: #172554;
+
+  color: white;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 45px 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr 1fr 1fr;
+
+  gap: 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FOOTER COLUMN
+========================================= */
+
+.footer-column h2 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+
+  color: white;
+}
+
+.footer-column h3 {
+  margin: 0 0 15px;
+
+  font-size: 17px;
+
+  color: white;
+}
+
+.footer-column p {
+  margin: 0;
+
+  max-width: 400px;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   QUICK LINKS
+========================================= */
+
+.footer-column > a {
+  display: block;
+
+  width: fit-content;
+
+  margin-bottom: 10px;
+
+  color: #cbd5e1;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column > a:hover {
+  color: white;
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.social-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: fit-content;
+
+  padding: 8px 12px;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  transition: transform 0.2s ease,
+              opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateX(3px);
+
+  opacity: 0.85;
+}
+
+.social-link span {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+
+  padding: 18px 20px;
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 35px 20px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column > a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-links {
+    align-items: center;
+  }
+
+  .footer-column p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
